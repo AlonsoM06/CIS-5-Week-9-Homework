@@ -1,9 +1,8 @@
-# Project 2 · Data lab
+# Homework 9 · Menu on the lab
 
-**Week 09 · Project**  
-**Theme:** One record, then the sweep
-
-This README is the full prompt.
+**Week 09 · Functions**  
+**Theme:** Name the process  
+**Due:** Monday night. This assignment is not due Sunday.
 
 
 ## Demo video (required)
@@ -11,46 +10,61 @@ This README is the full prompt.
 Paste a link to a short video of you running this assignment (tool + code + run).
 Work without a working video link is incomplete.
 
+The video should show choice 1 printing the average and choice 2 printing the high score, then quit.
+
 **Your demo:** _add your link here_
 
 
-## What to ship
-Ten or more numbers that mean something. One walk. A report: n, avg, hi, lo, and a filtered count.
+## What to build
 
-## Tracks (pick 1)
-| Track | Data | Filter example |
-|-------|------|----------------|
-| **A · Gradebook** | 10–20 scores | pass ≥ 70 |
-| **B · Weather** | temps or rain | hot ≥ 80 |
-| **C · Inventory** | quantities | low stock < 5 |
+This is Lab 9 plus a menu. One file covers both. If you already wrote `average` and `printSummary` in the lab repo, paste them here. If you start here, do the lab functions in this file first.
 
-## Requirements
-- ≥10 values in array(s)
-- sum / avg / min / max in one sweep
-- A named filter count
-- Seed min/max from `a[0]`
-- README lists the data and pastes the report
+Same scores: `{80, 90, 70, 100}`.
 
-## Sample report
+- `average` returns a `double` and does not print. If `n == 0`, return `0`.
+- `printSummary` only prints. It is `void`.
+- `printMenu` only prints the choices. It is `void`.
+- The menu repeats until the user types 3.
+- Choice 1 stores the average, then calls `printSummary`. A bare `average(scores, N);` prints `Average: 0`.
+- Choice 2 calls `high`, which returns the largest `int`. Print that returned value. The walk stays inside `high`. Seed the max from `a[0]`.
+- Choice 3 quits.
+- `main` reads the choice and calls. `main` does not walk the array.
+- In this README, name each function in one line: what goes in, what comes back.
+
 ```
-n=10  avg=78.1  hi=95  lo=60  pass=8
+1) Average  2) High  3) Quit
+Choice: 1
+Average: 85
+1) Average  2) High  3) Quit
+Choice: 2
+High: 100
+1) Average  2) High  3) Quit
+Choice: 3
 ```
 
-Hand-check `a[0]` first. If the loop disagrees, trust the hand check.
+`cout` prints `85` for the value `85.0`.
 
 ## Starter
-Start from `main.cpp`. Literal arrays are enough — no file I/O.
+
+Use `main.cpp`. Put your name in the file-top comment. The menu is sketched. Fill in `average` and `high`.
+
+## Environment
+
+VS 2022 · **GitHub Codespaces** · Replit · library machines
 
 ## Deliverables
+
 1. Course-visible GitHub repo
-2. README — data + sample report
+2. README names each function
 3. Short demo video (tool + code + run)
 4. Canvas links
 
 ## Scope fence
-Arrays + loops + conditionals. No pointers or files required.
+
+No classes. No globals.
 
 ## Integrity
+
 - AI = tutor, not ghostwriter
 - Fake ownership → zero
 - Due: Monday night (not Sunday)
@@ -58,7 +72,15 @@ Arrays + loops + conditionals. No pointers or files required.
 - Late: course policy (−10%/day unless stated otherwise)
 
 ## Rubric
-Graded on: it runs, it meets the prompt, output is labeled, and the GitHub repo plus demo video are there.
+
+The lab helpers have to be in this file. Homework adds the menu and `high`.
+
+| Criterion | Pts |
+|-----------|----:|
+| Runs correctly on a supported path | 40 |
+| Meets prompt requirements | 30 |
+| Helpers have one job each | 15 |
+| GitHub + short demo video | 15 |
 
 ## Getting started
 

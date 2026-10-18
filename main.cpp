@@ -1,15 +1,43 @@
 #include <iostream>
 
-// Project 2 — Your Name
-// Track: gradebook | weather | inventory
-// CIS 5 Week 09
+// Homework 9 — Your Name
+// CIS 5 Week 09 · Menu on the lab
+// Paste your lab functions here, or fill the TODOs.
+
+void printMenu() {
+  std::cout << "1) Average  2) High  3) Quit\n";
+}
+
+double average(const int a[], int n) {
+  // TODO: walk a and return the average. If n == 0, return 0.
+  return 0.0;
+}
+
+void printSummary(double avg) {
+  std::cout << "Average: " << avg << "\n";
+}
+
+int high(const int a[], int n) {
+  // TODO: return the max. Seed from a[0].
+  return a[0];
+}
 
 int main() {
-  const int N = 10;
-  int a[N] = {70, 80, 90, 60, 85, 75, 95, 88, 72, 66};  // TODO: your data
+  const int N = 4;
+  int scores[N] = {80, 90, 70, 100};
+  int choice = 0;
 
-  // TODO: print the row
-  // TODO: one sweep — sum, hi, lo, filter (seed hi/lo from a[0])
-  // TODO: labeled report after the loop
+  do {
+    printMenu();
+    std::cin >> choice;
+    if (choice == 1) {
+      double avg = average(scores, N);
+      printSummary(avg);
+    } else if (choice == 2) {
+      int top = high(scores, N);
+      std::cout << "High: " << top << "\n";
+    }
+  } while (choice != 3);
+
   return 0;
 }
