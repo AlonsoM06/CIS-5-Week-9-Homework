@@ -10,7 +10,7 @@
 Paste a link to a short video of you running this assignment (tool + code + run).
 Work without a working video link is incomplete.
 
-The video should show choice 1 printing the average and choice 2 printing the high score, then quit.
+The video is half the grade. Explain each function, what goes in, and what comes back. Then show choice 1, choice 2, and quit.
 
 **Your demo:** _add your link here_
 
@@ -71,16 +71,14 @@ No classes. No globals.
 - Discussions (every week): first post Friday, replies Sunday
 - Late: course policy (−10%/day unless stated otherwise)
 
-## Rubric
+## Rubric (100)
 
 The lab helpers have to be in this file. Homework adds the menu and `high`.
 
 | Criterion | Pts |
 |-----------|----:|
-| Runs correctly on a supported path | 40 |
-| Meets prompt requirements | 30 |
-| Helpers have one job each | 15 |
-| GitHub + short demo video | 15 |
+| Code submitted that does the work | 50 |
+| Video explanation | 50 |
 
 ## Getting started
 
