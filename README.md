@@ -12,7 +12,7 @@ Work without a working video link is incomplete.
 
 The video is half the grade. Explain each function, what goes in, and what comes back. Then show choice 1, choice 2, and quit.
 
-**Your demo:** _add your link here_
+**Your demo:** https://drive.google.com/file/d/1io3brcI7WG8LS4YTwkkjIzxuOQ8B_2pV/view?usp=sharing
 
 
 ## What to build
@@ -30,6 +30,9 @@ Same scores: `{80, 90, 70, 100}`.
 - Choice 3 quits.
 - `main` reads the choice and calls. `main` does not walk the array.
 - In this README, name each function in one line: what goes in, what comes back.
+
+- //double average is my function that has an array which contains values and will find its average as long as n doesn’t equal 0
+- // int high is a function that has an array which contains values and will will find highest array value starting from a[0]
 
 ```
 1) Average  2) High  3) Quit
